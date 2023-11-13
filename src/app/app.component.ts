@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'final';
+  title = 'Bug Reporting System';
+  role = '';
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  logIn(userRole: string): void {
+    this.role = userRole;
+  }
+
 }

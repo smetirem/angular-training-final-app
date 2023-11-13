@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  
+    <h2>Current Bugs</h2>
+    
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Reporter</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr  scope="row" *ngFor="let user of bugs">
+            <td>{{ user.title }}</td>
+            <td>{{ user.description }}</td>
+            <td>{{ user.priority }}</td>
+            <td>{{ user.reporter }}</td>
+            <td>{{ user.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button (click)="importBug()">Import Bug</button>
+
+
